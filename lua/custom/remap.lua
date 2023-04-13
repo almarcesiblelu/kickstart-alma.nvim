@@ -14,4 +14,4 @@ vim.keymap.set("n", "<leader>sx", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left>
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 vim.keymap.set("n", "<Tab>", vim.cmd.BufferNext)
-
+vim.keymap.set("n", "<S-Tab>", vim.cmd.BufferPrevious)
