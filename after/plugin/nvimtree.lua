@@ -10,4 +10,5 @@ vim.api.nvim_create_autocmd({"VimEnter"}, {
 
 vim.keymap.set('n', '<leader>ft', vim.cmd.NvimTreeToggle)
 vim.keymap.set('n', '<leader>ff', vim.cmd.NvimTreeFindFile)
+vim.keymap.set('n', '<leader>tf', vim.cmd.NvimTreeFocus)
 
