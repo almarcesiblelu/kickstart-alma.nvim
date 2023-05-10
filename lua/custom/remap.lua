@@ -15,3 +15,9 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 vim.keymap.set("n", "<Tab>", vim.cmd.BufferNext)
 vim.keymap.set("n", "<S-Tab>", vim.cmd.BufferPrevious)
+
+
+vim.keymap.set("i", "<C-h>", "<Left>")
+vim.keymap.set("i", "<C-l>", "<Right>")
+vim.keymap.set("i", "<C-j>", "<Down>")
+vim.keymap.set("i", "<C-k>", "<Up>")
