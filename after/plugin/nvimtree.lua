@@ -8,7 +8,7 @@ vim.api.nvim_create_autocmd({"VimEnter"}, {
     callback = open_nvim_tree
 })
 
-vim.keymap.set('n', '<leader>ft', vim.cmd.NvimTreeToggle)
+vim.keymap.set('n', '<C-n>', vim.cmd.NvimTreeToggle)
 vim.keymap.set('n', '<leader>ff', vim.cmd.NvimTreeFindFile)
 vim.keymap.set('n', '<leader>tf', vim.cmd.NvimTreeFocus)
 
