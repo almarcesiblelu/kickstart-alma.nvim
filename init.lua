@@ -409,7 +409,9 @@ end
 local servers = {
   -- clangd = {},
   -- gopls = {},
-  -- pyright = {},
+  pyright = {
+    filetypes={"python", "py"}
+  },
   -- rust_analyzer = {},
   -- tsserver = {},
 
@@ -441,6 +443,7 @@ mason_lspconfig.setup_handlers {
       capabilities = capabilities,
       on_attach = on_attach,
       settings = servers[server_name],
+      -- filetypes = vim.tbl_keys(servers[server_name].filetypes or {}),
     }
   end,
 }
