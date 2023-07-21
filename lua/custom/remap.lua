@@ -13,9 +13,6 @@ vim.keymap.set("n", "<leader>sx", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left>
 
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
-vim.keymap.set("n", "<Tab>", vim.cmd.BufferNext)
-vim.keymap.set("n", "<S-Tab>", vim.cmd.BufferPrevious)
-
 -- Move through buffers
 vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
@@ -28,3 +25,8 @@ vim.keymap.set("i", "<C-l>", "<Right>")
 vim.keymap.set("i", "<C-j>", "<Down>")
 vim.keymap.set("i", "<C-k>", "<Up>")
 
+vim.keymap.set('n', '<leader>q', '<cmd>q<cr>')
+vim.keymap.set('n', '<leader>w', '<cmd>w<cr>')
+vim.keymap.set('n', '<leader>x', '<cmd>x<cr>')
+
+vim.keymap.set('n', '<c-a>', 'ggVG')
