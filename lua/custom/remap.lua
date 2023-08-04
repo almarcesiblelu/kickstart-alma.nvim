@@ -29,3 +29,7 @@ vim.keymap.set('n', '<leader>w', '<cmd>w<cr>')
 vim.keymap.set('n', '<leader>x', '<cmd>x<cr>')
 
 vim.keymap.set('n', '<c-a>', 'ggVG')
+
+vim.keymap.set('n', 'gu', '<cmd>diffget //2<cr>')
+vim.keymap.set('n', 'gh', '<cmd>diffget //3<cr>')
+
